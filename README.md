@@ -4,7 +4,7 @@ I am building a new and disruptive platform called Fintech Finder. Fintech Finde
 
 ### What we are Creating
 
-We will use two Python files, both of which are contained in the starter folder.
+I will use two Python files, both of which are contained in the starter folder.
 
 The first file that you will use is called fintech_finder.py. It contains the code associated with the web interface of your application. The code included in this file is compatible with the Streamlit library. You will write all of your code for this Challenge in this file.
 
@@ -12,7 +12,7 @@ The second file that you will use is called crypto_wallet.py. This file contains
 
 Integrating these two files will allow you to automate the tasks associated with generating a digital wallet, accessing Ethereum account balances, and signing and sending transactions via a personal Ethereum blockchain called Ganache.
 
-We will do the following task:
+I will do the following task:
 
 Generate a new Ethereum account instance by using the mnemonic seed phrase provided by Ganache.
 Fetch and display the account balance associated with your Ethereum account address.
