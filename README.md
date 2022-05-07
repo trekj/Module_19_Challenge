@@ -20,10 +20,10 @@ Calculate the total value of an Ethereum transaction, including the gas estimate
 Digitally sign a transaction that pays a Fintech Finder candidate, and send this transaction to the Ganache blockchain.
 Review the transaction hash code associated with the validated blockchain transaction.
 
-### Localhost 8501 Screenshot
+### Localhost 8501 Screenshot of   Validated Transaction Hash (in green)
 
 
-![2022-05-07 (14)](https://user-images.githubusercontent.com/93211640/167274598-58cb2efc-3cc4-4e62-af6b-aabfb0b1975e.png)
+![2022-05-07 (17)](https://user-images.githubusercontent.com/93211640/167275014-fef00e51-4d41-498a-a833-9d35ec369481.png)
 
 
 ### Address Balance Screenshot
