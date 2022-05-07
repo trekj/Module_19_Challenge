@@ -88,10 +88,10 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 # Database of Fintech Finder candidates including their name, digital address, rating and hourly cost per Ether.
 # A single Ether is currently valued at $1,500
 candidate_database = {
-    "Lane": ["Lane", "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0", "4.3", .20, "Images/lane.jpeg"],
-    "Ash": ["Ash", "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396", "5.0", .33, "Images/ash.jpeg"],
-    "Jo": ["Jo", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.7", .19, "Images/jo.jpeg"],
-    "Kendall": ["Kendall", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.1", .16, "Images/kendall.jpeg"]
+    "Lane": ["Lane", "0x33f4520bffeEc2E7562cc91e1E6C1367dce16906", "4.3", .20, "Images/lane.jpeg"],
+    "Ash": ["Ash", "0x60D227Ba9f62ee1512e8383751Ea41147F658345", "5.0", .33, "Images/ash.jpeg"],
+    "Jo": ["Jo", "0x964a5A326f43d44AcDBF2FFFC5409157452C997a", "4.7", .19, "Images/jo.jpeg"],
+    "Kendall": ["Kendall", "0x74Cf8bdAc1B0fc70dAFb1c27B9277Ba62B8f7260", "4.1", .16, "Images/kendall.jpeg"]
 }
 
 # A list of the FinTech Finder candidates first names
@@ -151,7 +151,8 @@ st.sidebar.write(account.address)
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
 # YOUR CODE HERE
-st.sidebar.write(w3, get_balance(account.address))
+
+st.sidebar.write(get_balance(w3,account.address))
 
 
 ##########################################
@@ -279,7 +280,7 @@ if st.sidebar.button("Send Transaction"):
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
     # YOUR CODE HERE
-    transaction_hash = send_transaction(account, candidate_address, wage)
+    transaction_hash = send_transaction(w3, account, candidate_address, wage)
 
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")
