@@ -26,7 +26,7 @@ Review the transaction hash code associated with the validated blockchain transa
 ![2022-05-07 (14)](https://user-images.githubusercontent.com/93211640/167274598-58cb2efc-3cc4-4e62-af6b-aabfb0b1975e.png)
 
 
-### Adress Balance Screenshot
+### Address Balance Screenshot
 
 ![2022-05-07 (8)](https://user-images.githubusercontent.com/93211640/167274282-7f4e83de-dd91-4f3e-bae4-514961f3d294.png)
 
@@ -39,4 +39,50 @@ Review the transaction hash code associated with the validated blockchain transa
 
 ![2022-05-07 (9)](https://user-images.githubusercontent.com/93211640/167274399-168ca70f-a02c-40ab-83f5-295859a1818b.png)
 
+### ***Installation Guide***
+Before running the application first install the following dependencies.
 
+### Imports for crypto_wallet.py
+
+import os
+
+import requests
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from bip44 import Wallet
+
+from web3 import Account
+
+from web3 import middleware
+
+from web3.gas_strategies.time_based import medium_gas_price_strategy
+
+### Imports for fintech_finder.py
+
+import streamlit as st
+
+from dataclasses import dataclass
+
+from typing import Any, List
+
+from web3 import Web3
+
+w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
+
+
+### Usage 
+
+After cloning the repository, open the directory Module_19_Challenge/Starter_Code in Gitbash and run the program by typing ***streamlit run fintech_finder.py***
+
+#### Contributors
+
+James Tagapan
+
+jtagapan@gmail.com
+
+#### License
+
+Licensed under the MIT License. Copyright 2020# Module_10_Challenge
